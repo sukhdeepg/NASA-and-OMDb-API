@@ -1,0 +1,40 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+@import url('https://fonts.googleapis.com/css?family=Share+Tech+Mono');
+@import url('https://fonts.googleapis.com/css?family=KoHo');
+
+.center_div{
+	width: 50%;
+	margin: 0 auto;
+	box-shadow: 10px 10px 20px -1px rgba(150,148,150,1);
+}
+.nostyle-div{
+	width: 50%;
+	margin: 0 auto;
+	text-align: center;
+}
+h3{
+	font-family: 'Share Tech Mono', monospace;
+}
+#apod_explaination{
+	font-family: 'KoHo', sans-serif;
+}
+body{
+	background-color: #e6fff2;
+}
+input{
+	background-color:lightgreen;
+	border-color: black;
+}
+img.omdb{
+	border-radius: 20px;
+	transition: 0.25s ease-in-out;
+}
+h2{
+	font-family: 'Share Tech Mono', monospace;
+	font-size: 25px;
+}
+.container{
+	text-align: center;
+	margin: 0 auto;
+	padding: 20px;
+}

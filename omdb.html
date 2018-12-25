@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>OMDb API</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link type="text/css" rel="stylesheet" href="style/style.css">
+        <script
+            src="http://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous">
+        </script>
+    </head>
+    <body>
+        <!--Navigation bar-->
+        <div id="nav-placeholder"></div>
+    
+        <script>
+            $(function(){
+            $("#nav-placeholder").load("nav.html");
+            });
+        </script>
+        <!--end of Navigation bar-->
+        <form action="omdb_json.php" method="POST">
+            <div class="container">
+                <h2>Type Movie/Series Name to Search!</h2>
+                    <input type="text" id="movie_name" name="movie_name">
+                    <h2 id="title"></h2>
+                    <h2 id="runtime"></h2>
+                    <h2 id="released"></h2>
+                    <h2 id="genre"></h2>
+                    <h2 id="director"></h2>
+                    <h2 id="rating"></h2>
+                    <img src="images/no_photo.png" width="400" height="300" class="omdb">
+                    <hr>
+                    <button type="button" class="btn btn-success ajax">Click Here!</button>
+                    <button type="submit" class="btn btn-success" name="store_json">Store JSON to Database!</button>
+            </div>
+        </form>
+        <script>
+            var apiKey = '4881a04c';
+            function apiCall(){
+                var movie = document.getElementById("movie_name").value;
+                $.getJSON('https://www.omdbapi.com/?apikey='+apiKey+'&t='+encodeURI(movie)).then(function(response){
+                    $("#title").text(response.Title);
+                    $("#runtime").text(response.Runtime);
+                    $("#released").text(response.Released);
+                    $("#genre").text(response.Genre);
+                    $("#director").text(response.Director);
+                    $("#rating").text(response.imdbRating);
+                    var image = response.Poster;
+                    if(image !== "N/A"){
+                        $('img').attr('src', image);
+                    }
+                });
+            }
+            $('.ajax').click(function(){
+                apiCall();
+            });
+        </script>
+    </body>
+</html>

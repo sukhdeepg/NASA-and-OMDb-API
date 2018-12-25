@@ -1,0 +1,57 @@
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link type="text/css" rel="stylesheet" href="style/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <title>Nasa API</title>
+</head>
+<body>
+  <!--Navigation bar-->
+  <div id="nav-placeholder"></div>
+  
+  <script>
+  $(function(){
+    $("#nav-placeholder").load("nav.html");
+  });
+  </script>
+  <!--end of Navigation bar-->
+
+  <script>
+    var url = "https://api.nasa.gov/planetary/apod?api_key=kdBzUn723FcRUUw3bIfXijABy7OMokvHiorWmsGh";
+    $.ajax({
+    url: url,
+      success: function(result){
+        if(result.media_type == "video") {
+          $("#apod_img_id").css("display", "none"); 
+          $("#apod_vid_id").attr("src", result.url);
+        }
+        else {
+          $("#apod_vid_id").css("display", "none"); 
+          $("#apod_img_id").attr("src", result.url);
+        }
+          $("#reqObject").text(url);
+          $("#returnObject").text(JSON.stringify(result, null, 4));  
+          $("#apod_explaination").text(result.explanation);
+          $("#apod_title").text(result.title);
+      }   
+    });
+  </script>
+  <form action="nasa_json.php" method="POST">
+    <br>
+    <div class="center_div">
+      <h3 id="apod_title"></h3>
+    </div><br>
+    <div class="center_div">
+      <img id="apod_img_id" width="650" height="400"/>
+      <iframe id="apod_vid_id" type="text/html" width="640" height="385" frameborder="0"></iframe>
+    </div><br>
+    <div class="nostyle-div">
+      <p id="apod_explaination"></p>
+    </div>
+    <div class="nostyle-div">
+      <button type="submit" class="btn btn-success" name="store_json">Store JSON to Database!</button>
+    </div>
+  </form>
+  <br>
+</body>
+</html>
