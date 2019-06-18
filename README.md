@@ -1,2 +1,12 @@
-# NASA and OMDb API
-Project created using NASA and OMDb API
+## How to run?
+* Clone the project.
+* Launch the index.html file.
+
+## Login Page:
+![screenshot from 2018-05-08 21-04-38](https://lh4.googleusercontent.com/y22vZKryOo9iEvlyw4e68DPmNzV99YlcMHBgsP98T8j0g5edxtYqK8cNs88aOztKzKerUPQoTZunC-urjTzh6OlmkNJfsww1I_myKGD1hxxSyN1JTBetTPYK1ndSpCHRXzAR6TNg)
+
+## Nasa API:
+![screenshot from 2018-05-09 07-50-46](https://lh5.googleusercontent.com/QhA0a_UhJTJ2uLCvfyVGkvr_fwHqOzU9zSI35Ej0yOXnUNDJFPkAfv8RWNwjd4Ujmhx3QNPP3lq8xweDkOpIlSdFX_im0PkUwXzW-YhPrltHHRSheIPo6XUf_aXNB7oznm9UOBNs)
+
+## OMDb API:
+![screenshot from 2018-05-09 07-51-42](https://lh5.googleusercontent.com/6_Dui4u5oycxC2FuNT-4BOmFv4oiZW2fR-42hl6m0MSVvGHjIvIYg9_1-Z3-qPvD-J5pWHlOf834zyehosCICeeM7ta2PEGP9X2MS1mVAV9moFIi-OnVqBzEp0JeEUx5SGyEjB1W)
