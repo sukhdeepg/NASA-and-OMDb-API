@@ -1,6 +1,8 @@
-## How to run?
+## How to run? (Linux System)
 * Clone the project.
-* Launch the index.html file.
+* Go to the root of the directory
+* Open terminal over here and use this command: python -m SimpleHTTPServer 8888
+* In browser, go to localhost:8888
 
 ## Login Page:
 ![screenshot from 2018-05-08 21-04-38](https://lh4.googleusercontent.com/y22vZKryOo9iEvlyw4e68DPmNzV99YlcMHBgsP98T8j0g5edxtYqK8cNs88aOztKzKerUPQoTZunC-urjTzh6OlmkNJfsww1I_myKGD1hxxSyN1JTBetTPYK1ndSpCHRXzAR6TNg)
