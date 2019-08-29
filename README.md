@@ -4,9 +4,6 @@
 * Open terminal over here and use this command: python -m SimpleHTTPServer 8888
 * In browser, go to localhost:8888
 
-## Login Page:
-![screenshot from 2018-05-08 21-04-38](https://lh4.googleusercontent.com/y22vZKryOo9iEvlyw4e68DPmNzV99YlcMHBgsP98T8j0g5edxtYqK8cNs88aOztKzKerUPQoTZunC-urjTzh6OlmkNJfsww1I_myKGD1hxxSyN1JTBetTPYK1ndSpCHRXzAR6TNg)
-
 ## Nasa API:
 ![screenshot from 2018-05-09 07-50-46](https://lh5.googleusercontent.com/QhA0a_UhJTJ2uLCvfyVGkvr_fwHqOzU9zSI35Ej0yOXnUNDJFPkAfv8RWNwjd4Ujmhx3QNPP3lq8xweDkOpIlSdFX_im0PkUwXzW-YhPrltHHRSheIPo6XUf_aXNB7oznm9UOBNs)
 
