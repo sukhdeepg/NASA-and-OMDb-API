@@ -1,4 +1,4 @@
-## How to run? (Linux System)
+## How to run?
 * Clone the project.
 * Go to the root of the directory
 * Open terminal over here and use this command: python -m SimpleHTTPServer 8888
